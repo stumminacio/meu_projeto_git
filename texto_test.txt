@@ -1,1 +1,5 @@
 testo teste
+
+git add => adiciona o arquivo
+git commit => registra as informacoes
+git push => envia as informacoes para o repositorio
