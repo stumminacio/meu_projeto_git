@@ -176,6 +176,11 @@ print(f"Número de jogadores na equipe 1: {len(equipe1)}")'''
 EXERCÍCIOS DE CLASSES E OBJETOS
 ===========================================
 '''
+'''
+============================================
+PRIMEIRO EXERCÍCIO DE CLASSES E OBJETOS
+============================================
+
 class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
@@ -185,4 +190,4 @@ class Pessoa:
         return f"Nome: {self.nome}, Idade: {self.idade}"
 
 pessoa1 = Pessoa("Inácio", 13)
-print(pessoa1)
+print(pessoa1)'''
