@@ -29,7 +29,7 @@ O arquivo de entrada contém um valor inteiro N.
 Saída
 
 Imprima o tempo lido no arquivo de entrada (segundos), convertido para horas:minutos:segundos, conforme exemplo fornecido.
-'''
+
 
 def converter_tempo(segundos):
     horas = segundos // 3600
@@ -39,3 +39,8 @@ def converter_tempo(segundos):
 
 tempo_em_segundos = int(input("Digite o tempo em segundos: "))
 print(f"tempo convertido: {converter_tempo(tempo_em_segundos)}")
+
+# nota: a função converter_tempo realiza a conversão de segundos para o formato horas:minutos:segundos.
+# os metodos de divisão inteira (// = divisão inteira, sem resto) e módulo (% = resto da divisão) são usados para calcular as horas, minutos e segundos restantes.
+# o resultado é formatado em uma string no formato desejado e retornado.
+'''
