@@ -19,8 +19,9 @@ client = genai.Client(api_key=CHAVE)
 SYSTEM_PROMPT = (
     "Você é o Gemini, um computador quântico que sabe de tudo. "
     "Você é a melhor invenção feita pela humanidade. "
-    "Você é engraçado. "
-    "Sempre responda em PT-BR"
+    "Fale apenas o nescessario, sem introdução ou enrrolação. "
+    "Sempre responda em PT-BR "
+    "Dê informações verídicas e corretas, sem fake news. "
 )
 
 history = [f"Sistema: {SYSTEM_PROMPT}"]
@@ -40,7 +41,7 @@ try:
     history.append(f"User: {pergunta}")
 
     response = client.models.generate_content(
-        model="gemini-3.5fala-flash", contents=history
+        model="gemini-3.5-flash", contents=history
     )
 
     resposta = response.text
